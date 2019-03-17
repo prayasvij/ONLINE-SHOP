@@ -1,0 +1,16 @@
+SMAP
+addtocart_jsp.java
+JSP
+*S JSP
+*F
++ 0 addtocart.jsp
+addtocart.jsp
++ 1 logo.html
+logo.html
+*L
+5,19:54
+1#1,5:73
+23#0,2:78
+26,45:82
+70,4:127
+*E

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin pannel</title>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <script type="text/javascript" src="scripts/jquery.js">
+        </script>
+
+        <script type="text/javascript" src="scripts/Adminview.js">
+        </script>
+
+    </head>
+    <body >
+        <div id="logo">
+            <img src="images/loginlogo3.png" ><br>
+            <img src="images/shopping_logo5.png" >
+        </div>
+        <h1>Admin Option</h1>
+        <p>select a category to to take action.</p>
+        <p id="Products">
+            <strong><a href="#" onclick="products()">
+                    <span>+Products</span></a></strong></p>
+        <!--                    <div id="productlist">-->
+        <ul class="productlist">
+            <li><a href="#" onclick="addproduct()">Add</a></li>
+            <li><a href="#" onclick="updateproduct()">Update</a></li>
+            <li><a href="#" onclick="deleteproduct()">Delete</a></li>
+
+        </ul>
+
+        <!--</div>-->
+        <p id="Users"><strong><a href="#" onclick="users()">
+                    <span>+Users</span></a></strong></p>
+        <!--<div id="userslist">-->
+        <ul class="userslist">
+            <li><a href="#" onclick="">Delete</a></li>
+
+        </ul>
+        <!--</div>-->
+        <p id="Views"><strong><a href="#" onclick="views()">
+                    <span>+Views</span></a></strong></p>
+
+        <ul class="viewslist">
+            <li><a href="#" onclick="">Orders</a></li>
+            <li><a href="#" onclick="">Users</a></li>
+
+
+        </ul>
+        <div style="float:right">
+            <form id="addform"  style="border: solid black thick;align-content:center">
+                <h2 style="align-items: center">ADD NEW PRODUCT</h2>
+
+                <table>
+                    <tr>
+                        <td>Product Name</td>
+                        <td><input type="text" id="addpdname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Type</td>
+                        <td><input type="text" id="addpdtype">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Price</td>
+                        <td><input type="number" id="addpdprice">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Desc</td>
+                        <td><input type="text" id="addpddesc">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td><input type="file" id="addpdimage"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" title="Add Product" value="Add Product" onclick="addprd()"></td>
+                        <td><input type="button" title="Clear" value="Clear">
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+
+
+
+
+
+
+            <form id="updateform"  style="border: solid black thick;align-content:center">
+                <h2 style="align-items: center">UPDATE FORM</h2>
+                <table>
+                    <tr>
+                        <td>Product ID</td>
+                        <td><select  name="productid" id="productid" >
+                                <option>hello</option>
+            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Name</td>
+                        <td><input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Type</td>
+                        <td><input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Price</td>
+                        <td><input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Desc</td>
+                        <td><input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td><input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" title="Add Product" value="Add Product"></td>
+                        <td><input type="button" title="Clear" value="Clear">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form id="deleteform"  style="border: solid black thick;align-content:center">
+                <h2 style="align-items: center">DELETE FORM</h2>
+                <table>
+                    <tr>
+                        <td>Product Name</td>
+                        <td><input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Type</td>
+                        <td><input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Price</td>
+                        <td><input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Product Desc</td>
+                        <td><input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td><input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" title="Add Product" value="Add Product"></td>
+                        <td><input type="button" title="Clear" value="Clear">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <span id="result"></span>
+        </div>
+
+
+        <h4 id='logout'>
+
+            <a href='LoginControllerServlet?logout=logout'>Logout</a></h4>
+    </body>
+</html>

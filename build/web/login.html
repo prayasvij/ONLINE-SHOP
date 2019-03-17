@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="scripts/jquery.js">
+        </script>
+        <script type="text/javascript" src="scripts/login.js">
+        </script>
+
+    </head>
+    <body >
+        <div id="logo">
+            <img src="images/loginlogo3.png" ><br>
+            <img src="images/shopping_logo5.png" >
+        </div>
+
+        <fieldset id="loginfieldset"><legend>Login Window</legend>
+            <b>UserType</b><br> <select  name="usertype" id="usertype" >
+                <option>ADMIN</option>
+                <option>CUSTOMER</option>
+            </select>
+            <br>
+            <br>
+            <b>UserName</b><br> <input type="text" name="username" id="username" >
+            <br>
+            <br>
+            <b>Password</b><br> <input type="password" name="password" id="password" >
+            <br>
+            <br>
+            <input type="button" value="Login" name="Login" id="loginbtn" onclick="connect()" ><br>
+            <span id="loginresult"></span><br>
+
+        </fieldset>
+
+    </body>
+</html>
